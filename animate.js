@@ -125,10 +125,10 @@ setInterval(function(){
 }, 10);
 
 login.onclick = function(){
-	window.open("web.html","_blank","width=600px,height=500px,left=400px,top=200px");
+	window.open("login/web.html","_blank","width=600px,height=500px,left=400px,top=200px");
 }
 register.onclick = function(){
-	window.open("zhuce.html","_blank","width=600px,height=500px,left=400px,top=200px");
+	window.open("login/zhuce.html","_blank","width=600px,height=500px,left=400px,top=200px");
 }
 qqSmall.onmouseover = function(){
 	qq.style.display ="block";
@@ -180,7 +180,7 @@ function prev(){
 for(var i = 0;i<imgList.length;i++){
 	if(i == 1){
 	imgList[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 		}	
 	}
 }
@@ -188,28 +188,28 @@ console.log(ul1.length);  //2
 for(var i = 0;i<ul1.length;i++){
 	//循环结束,i=1
 	ul1[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 	}
 	ul2[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 	}
 	ul3[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 	}
 	ul4[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 	}
 	ul5[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 	}
 	ul6[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 	}
 	ul7[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 	}
 	ul8[i].onclick = function(){
-			window.open("index1.html","_blank");
+			window.open("change/index1.html","_blank");
 	}	
 }
 var timer=setInterval(next,3000);  //设定轮播
