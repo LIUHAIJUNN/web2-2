@@ -15,13 +15,14 @@
 		.top>b{
 			font-family: KaiTi;
 			position: relative;
-			left: 200px;
+			left: 160px;
 			font-weight: bold;
 			font-size: 50px;
+			top: -10px;
 		}
 		.all{
-			background-color: 	#FF9797; 
-			height: 600px;
+			background: url('d.jpg') no-repeat; 
+			height:800px;
 			width: 1600px;
 		}
 		.box{
@@ -30,8 +31,8 @@
 			padding: 0 20px;
 			border: 0px;
 			position: relative;
-			left: 620px;
-			top: 100px;
+			left: 100px;
+			top: 50px;
 		}
 		.tit{
 			margin-top: 5px;
@@ -87,6 +88,8 @@
 	
 			<input class="inp" type="password" placeholder="密码" id="password">
 			<p class="notice" id="password1">请输入6-12位密码</p>
+			<input class="inp" type="password2" placeholder="确认密码" id="password2">
+			<p class="notice" id="password3"></p>
 			<button class="btn" id="btn">注册</button>
 		</div>
 	</div>
@@ -101,6 +104,8 @@
 		}
 		var password = document.getElementById("password");
 		var password1 = document.getElementById("password1");
+		var password2 = document.getElementById("password2");
+		var password3 = document.getElementById("password3");
 		password.onfocus = function(){
 			password1.innerHTML = "请输入6-12位密码";
 		}
@@ -116,8 +121,14 @@
 				password1.innerHTML = "密码位数不对";
 			}
 			if(text.value.length > 3 && text.value.length < 11 &&
-				password.value.length > 5 && password.value.length < 13){
+				password.value.length > 5 && password.value.length < 13
+				&& password.value == password2.value){
 				window.alert("注册成功");
+			}
+			console.log(password.value);
+			console.log(password2.value);
+			if(password.value != password2.value){
+				password3.innerHTML="两次输入密码不相同";
 			}
 		}
 	</script>
